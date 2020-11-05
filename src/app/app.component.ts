@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project2';
+  name="";
+  age="";
+  parentComponent(data)
+  {
+    console.log(data)
+    this.name=data.name
+    this.age=data.age
+
+  }
 }
